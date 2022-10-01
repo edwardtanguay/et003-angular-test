@@ -1,5 +1,5 @@
 <div class="info-box">
 	<p>This is an info box.</p>
 	<p>random number: <span class="randomNumber">{{randomNumber}}</span></p>
-	<p [ngStyle]="{color: mainColor}">{{message}} </p>
+	<p [ngStyle]="{'background-color': mainColor, 'color':getRandomColor()}">{{message}} </p>
 </div>
