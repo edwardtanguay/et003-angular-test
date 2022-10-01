@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IBook } from './common/types';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'et003-angular-test';
+  message: string;
+  book: IBook;
+
+  constructor() {
+    this.book = {
+      title: "Sapiens",
+      author: "Harari",
+      numberOfPages: 234
+    }
+    this.message = `The current book is "${this.book.title}".`
+  }
 }
