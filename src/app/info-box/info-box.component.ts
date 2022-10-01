@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import  books from '../../data/books.json';
 
 @Component({
   selector: 'app-info-box',
@@ -16,7 +17,7 @@ export class InfoBoxComponent implements OnInit {
   }
 
   constructor() {
-    this.message = 'this is the message';
+    this.message = `there are ${books.length} books`;
   }
 
   ngOnInit(): void {
