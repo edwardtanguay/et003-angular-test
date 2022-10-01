@@ -3,4 +3,8 @@
 	<p>This is an info box.</p>
 	<p>random number: <span class="randomNumber">{{randomNumber}}</span></p>
 	<p [ngStyle]="{'background-color': mainColor, 'color':getRandomColor()}">{{message}} </p>
+	<div *ngIf="books.length >= 2">there are two or more books</div>
+	<div *ngIf="isRegistered">User is registered</div>
+	<div *ngIf="!isRegistered">User is NOT registered</div>
+	<button (click)="isRegistered = true">Register user</button>
 </div>

@@ -13,6 +13,8 @@ export class InfoBoxComponent implements OnInit {
   randomNumber: number = Math.floor(Math.random() * 100) + 1;
   message: string;
   mainColor = 'lightgreen';
+  isRegistered = false;
+  books = books;
 
   getRandomColor(): string {
     return Math.floor(Math.random() * 2) + 1 === 1 ? 'red' : 'black';
