@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
 		"start": "ng serve --host tanguay.eu --port 3999",
-		"publish": "git pull && npm run build && pm2 restart testang && pm2save"
+		"publish": "git pull && npm run build && pm2 restart testang && pm2 save"
   },
   "private": true,
   "dependencies": {
