@@ -7,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InfoBoxComponent implements OnInit {
 
-  randomNumber: number;
+  randomNumber: number = Math.floor(Math.random() * 100) + 1;
+  message: string;
+  mainColor = 'tomato';
 
   constructor() {
-    this.randomNumber = Math.floor(Math.random() * 100) + 1;
+    this.message = 'this is the message';
   }
 
   ngOnInit(): void {
