@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import  books from '../../data/books.json';
 
 @Component({
@@ -7,6 +7,8 @@ import  books from '../../data/books.json';
   styleUrls: ['./info-box.component.scss']
 })
 export class InfoBoxComponent implements OnInit {
+
+  @Input() theColor = '';
 
   randomNumber: number = Math.floor(Math.random() * 100) + 1;
   message: string;
