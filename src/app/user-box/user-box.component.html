@@ -1,0 +1,8 @@
+<div class="userBox">
+	<h3>The user box</h3>
+	<p *ngIf="userIsOnline ; else userNotOnline">User is online</p>
+	<ng-template #userNotOnline>
+		<p>User IS NOT ONLINE.</p>
+	</ng-template>
+	<button (click)="userIsOnline = !userIsOnline">toggle user online</button>
+</div>
