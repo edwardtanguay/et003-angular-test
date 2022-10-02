@@ -12,10 +12,11 @@ export class InfoBoxComponent implements OnInit {
 
   randomNumber: number = Math.floor(Math.random() * 100) + 1;
   message: string;
-  mainColor = 'lightgreen';
+  mainColor = 'coral';
   isRegistered = false;
   books = books;
   dayOfWeek = 'nnn';
+  messageClass = 'isCorrect';
 
   getRandomColor(): string {
     return Math.floor(Math.random() * 2) + 1 === 1 ? 'red' : 'black';

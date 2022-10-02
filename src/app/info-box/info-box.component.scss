@@ -22,4 +22,24 @@
 		background-color: #222;
 		font-weight: bold;
 	}
+
+	.theTestMessage {
+		margin-top: 1rem;
+	}
+
+	.isCorrect {
+		background-color: lightgreen;
+		color: green;
+	}
+
+	.isError {
+		background-color: tomato;
+		color: red;
+	}
+
+	.classTestButtons {
+		display:flex;
+		gap: 1rem;
+		margin-top: 1rem;
+	}
 }

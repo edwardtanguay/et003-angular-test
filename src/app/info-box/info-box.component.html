@@ -23,4 +23,11 @@
 		</container-element>
 	</div>
 	<hr />
+	<div class="techNote">ngClass</div>
+	<div class="theTestMessage"
+		 [ngClass]="messageClass">This is the message.</div>
+	<div class="classTestButtons">
+		<button (click)="messageClass = 'isCorrect'">mark as correct</button>
+		<button (click)="messageClass = 'isError'">mark as error</button>
+	</div>
 </div>
