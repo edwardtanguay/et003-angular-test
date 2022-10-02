@@ -3,8 +3,24 @@
 	<p>This is an info box.</p>
 	<p>random number: <span class="randomNumber">{{randomNumber}}</span></p>
 	<p [ngStyle]="{'background-color': mainColor, 'color':getRandomColor()}">{{message}} </p>
+	<hr />
+	<div class="techNote">ngIf, (click)</div>
 	<div *ngIf="books.length >= 2">there are two or more books</div>
 	<div *ngIf="isRegistered">User is registered</div>
 	<div *ngIf="!isRegistered">User is NOT registered</div>
 	<button (click)="isRegistered = true">Register user</button>
+	<hr />
+	<div class="techNote">ngSwitch, ngModel</div>
+	<h3>Type: "mon","tue", or "wed"</h3>
+	<div class="dayTest">
+		<input type="text"
+			   [(ngModel)]="dayOfWeek" />
+		<container-element [ngSwitch]="dayOfWeek">
+			<div *ngSwitchCase="'mon'">Monday</div>
+			<div *ngSwitchCase="'tue'">Tuesday</div>
+			<div *ngSwitchCase="'wed'">Wednesday</div>
+			<div *ngSwitchDefault>unknown: {{dayOfWeek}}</div>
+		</container-element>
+	</div>
+	<hr />
 </div>

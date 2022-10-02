@@ -9,4 +9,17 @@
 	.randomNumber {
 		color: rgb(177, 125, 29);
 	}
+
+	.dayTest {
+		display: flex;
+		gap: 1rem;
+	}
+
+	.techNote {
+		color:#aaa;
+		padding: .5rem;
+		font-family: courier;
+		background-color: #222;
+		font-weight: bold;
+	}
 }

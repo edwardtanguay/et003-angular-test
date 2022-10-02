@@ -15,6 +15,7 @@ export class InfoBoxComponent implements OnInit {
   mainColor = 'lightgreen';
   isRegistered = false;
   books = books;
+  dayOfWeek = 'nnn';
 
   getRandomColor(): string {
     return Math.floor(Math.random() * 2) + 1 === 1 ? 'red' : 'black';
