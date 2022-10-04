@@ -1,8 +1,13 @@
 <div class="info-box"
 	 [ngStyle]="{'background-color': theColor}">
 	<p>This is an info box.</p>
+	<div class="techNote">display random number</div>
 	<p>random number: <span class="randomNumber">{{randomNumber}}</span></p>
+	<div class="techNote">display array of objects with ngFor</div>
 	<p [ngStyle]="{'background-color': mainColor, 'color':getRandomColor()}">{{message}} </p>
+	<ul>
+		<li *ngFor="let book of books">{{book.title}}</li>
+	</ul>
 	<hr />
 	<div class="techNote">ngIf, (click)</div>
 	<div *ngIf="books.length >= 2">there are two or more books</div>
